@@ -30,3 +30,18 @@
   height: 25px;
   margin: 5px;
 }
+
+/* Icono */
+
+.tarea-icono {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+/* Tarea completada */
+
+.tarea-completada .completada {
+  background-color: #5a01a7;
+  text-decoration: line-through;
+}

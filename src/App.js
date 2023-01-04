@@ -3,7 +3,8 @@ import './App.css';
 import LogoFreeCodeCamp  from './componentes/LogoFreeCodeCamp';
 import Tarea from './componentes/Tarea'
 
-function App(texto) {
+
+function App() {
   return (
     <div className="App">
         <LogoFreeCodeCamp />
