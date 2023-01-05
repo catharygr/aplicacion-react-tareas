@@ -31,9 +31,6 @@ function ListaDeTareas() {
   }
 
 
-
-
-  
   return (
     <>
       <TareaFormulario onSubmit={agregarTarea} />
