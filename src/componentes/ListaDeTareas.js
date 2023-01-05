@@ -29,10 +29,15 @@ function ListaDeTareas() {
     });
     setTareas(tareasActualizadas);
   }
+
+
+
+
   
   return (
     <>
       <TareaFormulario onSubmit={agregarTarea} />
+    
       <div className='tareas-lista-contenedor'>
         {
           tareas.map((tarea) =>
@@ -42,7 +47,8 @@ function ListaDeTareas() {
               texto={tarea.texto}
               completada={tarea.completada}
               completarTarea={completarTarea}
-              eliminarTarea={eliminarTarea} />
+              eliminarTarea={eliminarTarea} 
+             />
           ) 
         }
       </div>
@@ -50,4 +56,4 @@ function ListaDeTareas() {
   );    
 }
 
-export default ListaDeTareas;
+export default ListaDeTareas;   

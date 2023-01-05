@@ -18,26 +18,32 @@ function TareaFormulario(props) {
       texto: input,
       completada: false
     }
-
+    const resetarCampo = document.getElementById('resetear-campo')
+    resetarCampo.value=''
+    setInput('')
     props.onSubmit(tareaNueva);
   }
+
+
 
   return (
     <form 
       className='tarea-formulario'
       onSubmit={manejarEnvio}>
       <input 
+        id='resetear-campo'
         className='tarea-input'
         type='text'
         placeholder='Escribe una Tarea'
         name='texto'
         onChange={manejarCambio}
+
       />
-      <button className='tarea-boton'>
+      <button className='tarea-boton resetear-campo '>
         Agregar Tarea
       </button>
     </form>
   );
 }
 
-export default TareaFormulario;
+export default TareaFormulario; 
